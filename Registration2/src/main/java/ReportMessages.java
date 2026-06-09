@@ -131,6 +131,7 @@ public class ReportMessages {
         ArrayList<String> statusList = Message.getStatus();
         ArrayList<String> stored = Message.getStoredMessages();
         ArrayList<String> sent = Message.getSentMessages();
+        ArrayList<String> messageHashes = Message.getMessageHashes();
 
         if (ids.isEmpty()) {
             return "No messages to report";
@@ -140,6 +141,7 @@ public class ReportMessages {
 
         for (int i = 0; i < ids.size(); i++) {
             result += "ID: " + ids.get(i) + "\n";
+            result += "Hash: " + messageHashes.get(i) + "\n"; 
             result += "Recipient: " + recipientList.get(i) + "\n";
             result += "Status: " + statusList.get(i) + "\n";
 
