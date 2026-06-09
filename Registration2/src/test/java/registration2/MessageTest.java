@@ -13,7 +13,7 @@ public class MessageTest {
 
     Message test = new Message();
 
-    // TEST MESSAGE ID
+
     @Test
     public void testCheckMessageIDSuccess() {
 
@@ -26,7 +26,7 @@ public class MessageTest {
         assertFalse(Message.checkMessageID("12345678901"));
     }
 
-    // TEST RECIPIENT NUMBER
+   
     @Test
     public void testCheckRecipientCellSuccess() {
 
@@ -38,7 +38,7 @@ public class MessageTest {
         assertFalse(test.checkRecipientCell("0838968900"));
     }
 
-    // TEST MESSAGE HASH
+ 
     @Test
     public void testCreateMessageHash() {
 
@@ -47,7 +47,7 @@ public class MessageTest {
     assertEquals("00:1:HITONIGHT",result);
     }
 
-    // TEST MESSAGE LENGTH SUCCESS
+    
     @Test
     public void testMessageLengthSuccess() {
 
@@ -57,7 +57,7 @@ public class MessageTest {
         assertTrue(shortMessage.length() <= 250);
     }
 
-    // TEST MESSAGE LENGTH FAILURE
+    
     @Test
     public void testMessageLengthFail() {
 
@@ -71,7 +71,7 @@ public class MessageTest {
         assertTrue(longMessage.length() > 250);
     }
 
-    // TEST TOTAL MESSAGES
+    
     @Test
     public void testReturnTotalMessages() {
 

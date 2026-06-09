@@ -1,3 +1,4 @@
-test\registration2\Message.class
 test\registration2\Registration2.class
 test\registration2\login2.class
+test\registration2\StoreMessages.class
+test\registration2\Message.class
