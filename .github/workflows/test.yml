@@ -15,5 +15,5 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
     - name: Build and Test with Maven
-      run: mvn test -Dtest=StoreMessageTest
-      working-directory: Registration2
+  run: mvn test -Dtest=ReportMessagesTest
+  working-directory: Registration2
